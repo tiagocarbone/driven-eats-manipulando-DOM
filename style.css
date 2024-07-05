@@ -105,7 +105,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     display: none;
-    
+    z-index: 1;
 }
 
 .layout h1 {
