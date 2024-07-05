@@ -55,7 +55,7 @@ body {
     flex-wrap: nowrap;
     min-width: 320px;
     overflow: auto;
-    z-index: -2;
+    
 }
 
 .ultimo-container {
