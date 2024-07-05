@@ -91,7 +91,7 @@ body {
 .layout-container {
     display: flex;
     justify-content: center;
-   
+    z-index: 1;
 }
 
 
@@ -116,6 +116,7 @@ body {
     font-size: 22px;
     text-align: center;
     margin-top: 21px;
+    z-index: 1;
 }
 
 .container-p {
@@ -123,7 +124,7 @@ body {
     justify-content: space-between;
     margin-left: 26px;
     margin-right: 23px;
-
+    z-index: 1;
 }
 
 .container-p p {
@@ -132,11 +133,12 @@ body {
     line-height: 25.78px;
     color: white;
     font-weight: 400;
-
+    z-index: 1;
 }
 
 .container-p .total {
     font-weight: 700;
+    z-index: 1;
 }
 
 .button-fechar {
@@ -150,6 +152,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .button-fechar p {
@@ -158,12 +161,14 @@ body {
     font-size: 22px;
     line-height: 25.78px;
     color: #5dd074;
+    z-index: 1;
 }
 
 .cancelar {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .cancelar p {
@@ -172,6 +177,7 @@ body {
   font-family: "Roboto";
   font-size: 20px;
   line-height: 23.44px;  
+  z-index: 1;
 } 
 
 .text-container {
