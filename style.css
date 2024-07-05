@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgba(211, 211, 211, 0.315);
+}
+
+.fixed-bar {
+    position: fixed;
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    padding-left: 21px;
+    padding-top: 8px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.fixed-bar h1 {
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 54.63px;
+}
+
+
+.fixed-bar p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+}
+
+.primeiro-item {
+    padding-top: calc(92px);
+}
+
+.instrucao h1 {
+
+    font-family: "Righteous", sans-serif;
+    font-size: 26px;
+    line-height: 32.28px;
+    padding-top: 31px;
+    margin-left: 19px;
+}
+
+.prato-container {
+    margin-top: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 320px;
+    overflow: auto;
+}
+
+.ultimo-container {
+    padding-bottom: 16px;
+}
+
+
+
+.prato {
+    background-color: white;
+    width: 172px;
+    height: 216px;
+    margin-left: 19px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 9px;
+}
+
+.img-container {
+    display: flex;
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.prato img {
+    width: 144px;
+    height: 87px;
+
+
+}
+.layout-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.layout {
+    width: 377px;
+    height: 353px;
+    z-index: 1;
+    background-color: #5dd074;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    
+}
+
+.layout h1 {
+    font-family: "Roboto";
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.container-p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 26px;
+    margin-right: 23px;
+
+}
+
+.container-p p {
+    font-family: "Roboto";
+    font-size: 22px;
+    line-height: 25.78px;
+    color: white;
+    font-weight: 400;
+
+}
+
+.container-p .total {
+    font-weight: 700;
+}
+
+.button-fechar {
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: white;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-fechar p {
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 22px;
+    line-height: 25.78px;
+    color: #5dd074;
+}
+
+.cancelar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancelar p {
+  font-weight: 700;
+  color: white;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 23.44px;  
+} 
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    position: relative;
+
+}
+
+.text-container p {
+    margin-top: 7px;
+
+}
+
+.prato-nome {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+
+}
+
+.prato-descricao {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.prato-preco {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ultimo-container {
+    padding-bottom: 112px;
+}
+
+.fixed-end {
+    background-color: white;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.button {
+    width: 364px;
+    height: 61px;
+    background-color: #cbcbcb;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.button p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 200px;
+
+}
+
+.selected {
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+
+}
+
+.svg {
+    position: absolute;
+    left: 130px;
+    top: 74px;
+    display: none;
+}
