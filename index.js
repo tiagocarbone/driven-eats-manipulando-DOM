@@ -103,7 +103,8 @@ function selecionaSobremesa(botao, valor, nome){
 function checagem(){
     if(prato1Container.querySelector(".selected") 
      && bebida2Container.querySelector(".selected")
-     && sobremesa3Container.querySelector(".selected")  ){
+     && sobremesa3Container.querySelector(".selected")  )
+     {
         divFecharPedido.innerHTML = "<p>Fechar pedido</p>"
         divFecharPedido.style.backgroundColor = "#32B72F"
         let paragrafo = divFecharPedido.querySelector("p")
@@ -112,8 +113,15 @@ function checagem(){
 }
 
 
+
+
 function fecharPedido() {
-    fixedBar.style.opacity = 0.3
+    
+    if(prato1Container.querySelector(".selected") 
+        && bebida2Container.querySelector(".selected")
+        && sobremesa3Container.querySelector(".selected")  )
+        {
+            fixedBar.style.opacity = 0.3
     prato1Container.style.opacity = 0.3
     bebida2Container.style.opacity = 0.3
     sobremesa3Container.style.opacity = 0.3
@@ -148,7 +156,15 @@ function fecharPedido() {
         <div class="cancelar">
             <p onclick="fecharPedidoCancelar()">Cancelar</p>
         </div> `
+       } else {
+        window.alert("selecione 3 itens")
+       }
+
     
+   
+    
+
+        
         
 }
 
