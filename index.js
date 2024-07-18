@@ -40,32 +40,48 @@ let nomeSobremesa
 
 
 
-function selecionaPrato(botao, valor, nome) {
+function selecionaPrato(botao) {
+   
+    let valorPratoComida = Number(botao.querySelector(".prato-preco").innerHTML.split("R$")[1].replace(",", "."));
+    let nomePratoComida = botao.querySelector(".prato-nome").innerHTML
     
-    botaoSelecionadoAntesComida = document.querySelector(".prato-1 .selected")
-    svgAntesComida = prato1Container.querySelector(".selected  svg")
 
+    let botaoSelecionadoAntesComida = document.querySelector(".prato-1 .selected");
+    let svgAntesComida = prato1Container.querySelector(".selected svg");
 
+    
     if (botaoSelecionadoAntesComida && svgAntesComida) {
-        botaoSelecionadoAntesComida.classList.remove("selected")
-        svgAntesComida.style.display = "none"
+        botaoSelecionadoAntesComida.classList.remove("selected");
+        svgAntesComida.style.display = "none";
     }
 
-    botao.classList.add("selected")
-    svgComida = botao.querySelector("svg")
-    svgComida.style.display = "block"
-    valorComida = valor
-    nomeComida = nome
-    checagem()
+   
+    botao.classList.add("selected");
+    const svgComida = botao.querySelector("svg");
+    svgComida.style.display = "block";
+
     
+    valorComida = valorPratoComida;  
+    nomeComida = nomePratoComida;  
+
     
+    console.log("Valor do prato atual:", valorPratoComida);
+    console.log(nomePratoComida)
+
+    
+    checagem();
 }
 
 
-function selecionaBebida(botao, valor, nome){
+function selecionaBebida(botao){
     
     let botaoSelecionadoAntesBebida = document.querySelector(".bebida-2 .selected")
     let svgAntesBebida = bebida2Container.querySelector(".selected svg")
+
+    let nomeBebidaTeste = botao.querySelector(".bebida-2 .prato-nome").innerHTML
+    let precoBebidaTeste = Number(botao.querySelector(".bebida-2 .prato-preco").innerHTML.split("R$")[1].replace(",", "."))
+
+    
 
 
     if(botaoSelecionadoAntesBebida && svgAntesBebida){
@@ -75,16 +91,20 @@ function selecionaBebida(botao, valor, nome){
     botao.classList.add("selected")
     svgBebida = botao.querySelector("svg")
     svgBebida.style.display = "block"
-    valorBebida = valor
-    nomeBebida = nome
+    valorBebida = precoBebidaTeste
+    nomeBebida = nomeBebidaTeste
     checagem()
-    
 }
 
-function selecionaSobremesa(botao, valor, nome){
+function selecionaSobremesa(botao){
     
     let botaoSelecionadoAntesSobremesa = document.querySelector(".sobremesa-3 .selected")
     let svgAntesSobremesa = sobremesa3Container.querySelector(".selected svg")
+
+
+
+    let nomeSobremesaTeste = botao.querySelector(".sobremesa-3 .prato-nome").innerHTML
+    let valorSobremesaTeste = Number(botao.querySelector(".sobremesa-3 .prato-preco").innerHTML.split("R$")[1].replace("," , "."))
 
     if(botaoSelecionadoAntesSobremesa ){
         botaoSelecionadoAntesSobremesa.classList.remove("selected")
@@ -93,8 +113,8 @@ function selecionaSobremesa(botao, valor, nome){
     botao.classList.add("selected")
     svgSobremesa = botao.querySelector("svg")
     svgSobremesa.style.display = "block"
-    valorSobremesa = valor
-    nomeSobremesa = nome 
+    valorSobremesa = valorSobremesaTeste
+    nomeSobremesa = nomeSobremesaTeste 
     checagem()
     
     
